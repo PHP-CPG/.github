@@ -20,12 +20,12 @@ This organization contains multiple repositories spanning the Code Property Grap
 ### [Patched PHP](https://github.com/PHP-CPG/php-src)
 
 We had to patch the original PHP interpreter to allow for the processing of constant strings.
-This [repository](https://github.com/PHP-CPG/php-src) contains our patched version which we try to keep as up to date as possible.
+Using our fork of the interpreter is a hard requirement and we try to keep as up to date as possible.
 
-### Code  Property Graph
+### [Code Property Graph](https://github.com/PHP-CPG/CPG)
 
-Our Code Property Graph [repository](https://github.com/PHP-CPG/CPG) contains the code and tooling to convert PHP projects into a CPG.
-We only support PHP Bytecode, but we plan to create passes for PHP Source Code eventually.
+This repository contains the code and tooling to convert PHP projects into a CPG.
+We only support PHP Bytecode but plan to create passes for PHP Source Code eventually.
 You can create a Docker container based on our Patched PHP interpreter, which takes a project and returns a finished CPG.
 
 ### Slicer
