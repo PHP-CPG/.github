@@ -15,7 +15,7 @@ If you depend on the CPG, please cite us:
 ``` 
 ## Repositories
 
-This organization contains multiple repositories spanning the Code Property Graph implementation itself as well as additional tooling and quality of life utilities.
+This organization contains multiple repositories spanning the Code Property Graph implementation itself, as well as additional tooling and quality-of-life utilities.
 
 ### [Patched PHP](https://github.com/PHP-CPG/php-src)
 
@@ -33,10 +33,13 @@ You can create a Docker container based on our Patched PHP interpreter, which ta
 We implemented the extraction of an inter-functional program slice from a bytecode CPG. 
 It takes a function call as a slicing criterion and then extracts the DDG- and CFG-related subgraph.
 
-### Scala Master
+### [Scala Master](https://github.com/PHP-CPG/scala-master)
 
-### Plotter
+This utility allows you to schedule and distribute tasks across multiple code property graphs, handling large scale static analysis experiments.
 
+### [Plotter](https://github.com/PHP-CPG/plotter)
+
+This is a useful utility that allows you to visualize a given CPG (slice) using dot files and a corresponding converter.
 
 ## Usage
 
