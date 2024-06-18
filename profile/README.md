@@ -17,7 +17,7 @@ If you depend on the CPG, please cite us:
 
 This organization contains multiple repositories spanning the Code Property Graph implementation itself as well as additional tooling and quality of life utilities.
 
-### Patched PHP
+### [Patched PHP](https://github.com/PHP-CPG/php-src)
 
 We had to patch the original PHP interpreter to allow for the processing of constant strings.
 This [repository](https://github.com/PHP-CPG/php-src) contains our patched version which we try to keep as up to date as possible.
