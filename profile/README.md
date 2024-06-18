@@ -38,3 +38,13 @@ It takes a function call as a slicing criterion and then extracts the DDG- and C
 ### Plotter
 
 
+## Projects and Publications Using Us
+
+```
+@inproceedings{USENIX:Wessels:2024,
+  title={SSRF vs. Developers: A Study of SSRF-Defenses in PHP Applications}
+  authors={Wessels, Malte and Koch, Simon and Pellegrino, Giancarlo and Johns, Martin},
+  venue={USENIX Security},
+  year={2024}
+}
+``` 
