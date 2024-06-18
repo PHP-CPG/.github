@@ -9,7 +9,8 @@ This organization was founded with our publication of `SSRF vs. Developers: A St
   title={SSRF vs. Developers: A Study of SSRF-Defenses in PHP Applications}
   authors={Wessels, Malte and Koch, Simon and Pellegrino, Giancarlo and Johns, Martin},
   venue={USENIX Security},
-  year={2024},
+  year={2024}
+}
 ``` 
 
 ## Coder  Property Graph
