@@ -19,7 +19,7 @@ This organization contains multiple repositories spanning the Code Property Grap
 
 ### [Patched PHP](https://github.com/PHP-CPG/php-src)
 
-We had to patch the original PHP interpreter to allow for the processing of constant strings.
+We had to patch the original PHP interpreter to allow for the processing of constant strings in our bytecode dump.
 Using our fork of the interpreter is a hard requirement, and we try to keep as up-to-date as possible.
 
 ### [Code Property Graph](https://github.com/PHP-CPG/CPG)
