@@ -41,9 +41,34 @@ This utility allows you to schedule and distribute tasks across multiple code pr
 
 This is a useful utility that allows you to visualize a given CPG (slice) using dot files and a corresponding converter.
 
-## Usage
+## Create a Basic Large-Scale CPG Converter
 
-While each repository has its own `README` we mean to give you a broad how-to to get you up to speed.
+While each repository has its own `README.md` we mean to give you a broad how-to here to get you up to speed.
+This little tutorial only covers the build and deployment using docker to create a dummy scala-master instance which will iterate over a set of PHP projects, creating a CPG for each.
+Please refer to the individual `README` files for more in-depth information.
+
+### Dependencies
+
+We have tested our instructions on a Linux machine (Arch) using Docker version 26.1.4, build 5650f9b102.
+
+### Steps 
+
+1. First, you must create the basic docker image containing our patched PHP interpreter. Everything else depends on it.
+   The corresponding docker file is provided [here](https://github.com/PHP-CPG/CPG/tree/master/resources/docker/PHP-StringPatched).
+   To build it, just clone our [Code Property Graph repository](https://github.com/PHP-CPG/CPG) and go to the linked folder.
+   ```
+   $> ./create.sh
+   ```
+   Be patient - this will take some time.
+3. Next, we want to create the docker container containing our CPG converter. The corresponding file is provided [here](https://github.com/PHP-CPG/CPG/tree/master/resources/docker/multilayer-php-cpg).
+   To build it, change the directory to the linked folder.
+   ```
+   $> ./create.sh
+   ```
+   Now you can already convert single projects into a CPG.
+   ```
+   $> ./run.sh /path/to/project/root/ /path/to/the/folder/to/store/the/cpg/
+   ```
 
 ## Projects and Publications Using Us
 
