@@ -25,8 +25,8 @@ Using our fork of the interpreter is a hard requirement and we try to keep as up
 ### [Code Property Graph](https://github.com/PHP-CPG/CPG)
 
 This repository contains the code and tooling to convert PHP projects into a CPG.
-We only support PHP Bytecode but plan to create passes for PHP Source Code eventually.
-You can create a Docker container based on our Patched PHP interpreter, which takes a project and returns a finished CPG.
+We only support PHP Bytecode but plan to eventually create passes for PHP Source Code.
+You can create a Docker container based on our Patched PHP interpreter, which takes a project and returns a finished CPG, alleviating the whole dependency fuzzing.
 
 ### Slicer
 
