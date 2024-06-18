@@ -38,6 +38,10 @@ It takes a function call as a slicing criterion and then extracts the DDG- and C
 ### Plotter
 
 
+## Usage
+
+While each repository has its own `README` we mean to give you a broad how-to to get you up to speed.
+
 ## Projects and Publications Using Us
 
 ```
