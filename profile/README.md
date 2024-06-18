@@ -14,7 +14,14 @@ If you depend on the CPG, please cite us:
 }
 ``` 
 
-## Coder  Property Graph
+## Patched PHP
+
+
+## Code  Property Graph
+
+Our Code Property Graph [repository](https://github.com/PHP-CPG/CPG) contains the code and tooling to convert PHP projects into a CPG.
+At the moment, we only support PHP Bytecode, but we plan to eventually create passes for PHP Source Code.
+You can create a docker container based on our Patched PHP interpreter and takes a project and returns a finished CPG.
 
 ## Slicer
 
