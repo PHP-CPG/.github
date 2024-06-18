@@ -13,22 +13,23 @@ If you depend on the CPG, please cite us:
   year={2024}
 }
 ``` 
+## Repositories
 
-## Patched PHP
+### Patched PHP
 
 We had to patch the original PHP interpreter to allow for the processing of constant strings.
 This [repository](https://github.com/PHP-CPG/php-src) contains our patched version which we try to keep as up to date as possible.
 
-## Code  Property Graph
+### Code  Property Graph
 
 Our Code Property Graph [repository](https://github.com/PHP-CPG/CPG) contains the code and tooling to convert PHP projects into a CPG.
 We only support PHP Bytecode, but we plan to create passes for PHP Source Code eventually.
 You can create a Docker container based on our Patched PHP interpreter, which takes a project and returns a finished CPG.
 
-## Slicer
+### Slicer
 
-## Scala Master
+### Scala Master
 
-## Plotter
+### Plotter
 
 
