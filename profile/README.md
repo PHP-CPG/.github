@@ -15,6 +15,8 @@ If you depend on the CPG, please cite us:
 ``` 
 ## Repositories
 
+This organization contains multiple repositories spanning the Code Property Graph implementation itself as well as additional tooling and quality of life utilities.
+
 ### Patched PHP
 
 We had to patch the original PHP interpreter to allow for the processing of constant strings.
