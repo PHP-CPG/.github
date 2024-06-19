@@ -69,6 +69,17 @@ We have tested our instructions on a Linux machine (Arch) using Docker version 2
    ```
    $> ./run.sh /path/to/project/root/ /path/to/the/folder/to/store/the/cpg/
    ```
+4. Our final step towards large-scale CPG creation is using the default scala-master.
+   It comes equipped with an empty consumer and will take on the task of parallelizing our CPG creation process.
+   Clone the scala-master [repository](https://github.com/PHP-CPG/scala-master) and switch to the [docker folder](https://github.com/PHP-CPG/scala-master/tree/master/resources/docker/template).
+   ```
+   $> ./create.sh
+   ```
+   Now you can point the scala master to a folder containing multiple PHP projects, and it will create CPGs (as best it can) for all of them.
+   ```
+   $> ./run.sh /path/to/folder/containing/multiple/projects/ /path/to/folder/to/put/cpgs/ /tmp/ [workerCount]
+   // e.g. ./run.sh /php/projects/ /cpgs/ /tmp/ 8 - this will run 8 parallel CPG creation processes in parallel, no number means 10 processes
+   ```
 
 ## Projects and Publications Using Us
 
