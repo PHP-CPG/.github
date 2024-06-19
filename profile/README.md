@@ -39,7 +39,7 @@ This utility allows you to schedule and distribute tasks across multiple code pr
 
 ### [Plotter](https://github.com/PHP-CPG/plotter)
 
-This is a useful utility that allows you to visualize a given CPG (slice) using dot files and a corresponding converter.
+This useful utility allows you to visualize a given CPG (slice) using dot files and a corresponding converter.
 
 ## Create a Basic Large-Scale CPG Converter
 
@@ -55,7 +55,7 @@ We have tested our instructions on a Linux machine (Arch) using Docker version 2
 
 1. First, you must create the basic docker image containing our patched PHP interpreter. Everything else depends on it.
    The corresponding docker file is provided [here](https://github.com/PHP-CPG/CPG/tree/master/resources/docker/PHP-StringPatched).
-   To build it, just clone our [Code Property Graph repository](https://github.com/PHP-CPG/CPG) and go to the linked folder.
+   To build it, just clone our Code Property Graph [repository](https://github.com/PHP-CPG/CPG) and go to the linked folder.
    ```
    $> ./create.sh
    ```
@@ -80,6 +80,17 @@ We have tested our instructions on a Linux machine (Arch) using Docker version 2
    $> ./run.sh /path/to/folder/containing/multiple/projects/ /path/to/folder/to/put/cpgs/ /tmp/ [workerCount]
    // e.g. ./run.sh /php/projects/ /cpgs/ /tmp/ 8 - this will run 8 parallel CPG creation processes in parallel, no number means 10 processes
    ```
+
+### Next Steps
+
+You can now create CPGs automatically, in parallel, and scheduled, but you most likely also want to analyze them using your novel tool.
+To do this, you first need to create a *consumer* - a tool that takes in a CPG, processes it, and then outputs the results in a JSON file.
+You can integrate this into the presented toolchain by creating a new docker container based on the `scala-master`; you build the project within this container and then adapt the `main.conf` section for the consumer.
+Point the `run` value towards the executable of your tool and adapt the `parameter` to suit your needs.
+But bear in mind that the scala-master will only replace two values, `{cpg}` and `{out}`, in the parameter string. The first points towards the to-be-analyzed CPG, and the second defines the result output file.
+When you have created your new Docker container, you can run it exactly as in step 4. A nice plus is that any already existing CPG will not be recreated to save time and CPU cycles.
+
+Our [slicer](https://github.com/PHP-CPG/slicer) might help you analyze the CPG, and our [plotting utility](https://github.com/PHP-CPG/plotter) greatly helped us during development, so give them a look.
 
 ## Projects and Publications Using Us
 
