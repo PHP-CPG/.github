@@ -37,9 +37,9 @@ It takes a function call as a slicing criterion and then extracts the DDG- and C
 
 This utility allows you to schedule and distribute tasks across multiple code property graphs, handling large scale static analysis experiments.
 
-### [Plotter](https://github.com/PHP-CPG/plotter)
+### [Plotter](https://github.com/PHP-CPG/CpgDotFileExporter)
 
-This useful utility allows you to visualize a given CPG (slice) using dot files and a corresponding converter.
+This useful utility allows you to visualize a given CPG (slice) using dot files and a corresponding converter. It depends on a library we already pushed to mvn repos; however, the code can be found [here](https://github.com/PHP-CPG/plotter).
 
 ## Create a Basic Large-Scale CPG Converter
 
